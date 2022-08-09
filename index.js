@@ -2,6 +2,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 
 
+
 function extraiLinks(texto) {
   const regex = /\[([^\]]*)\]\((https?:\/\/[^$#\s].[^\s]*)\)/gm;
   const arrayResultados = [];
@@ -17,6 +18,7 @@ function trataErro(erro) {
 }
 
 async function pegaArquivo(caminhoDoArquivo) {
+  
   const encoding = 'utf-8';
   try {
     const texto =  await fs.promises.readFile(caminhoDoArquivo, encoding);
