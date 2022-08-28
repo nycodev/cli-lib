@@ -2,14 +2,27 @@
   "name": "lib-markdown-library-test-1",
   "version": "1.0.0",
   "description": "simple CLI library to extract and test links on markdown format",
-  "main": "index.js",
+  "main": "./cli.js",
   "scripts": {
     "test": "jest",
     "cli": "node cli.js"
   },
-  "keywords": ["markdown", "URL"],
-  "author": "",
+  "keywords": [
+    "markdown",
+    "URL"
+  ],
+  "author": "Nycolas Borowski",
+  "homepage": "https://github.com/nycodev/cli-lib#readme",
+  "bugs": "nycolas_borowski@hotmail.com",
   "license": "ISC",
+  "bin": {
+    "lib-markdown-library-test-1": "./cli.js"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nycodev/cli-lib.git"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^3.2.10"
