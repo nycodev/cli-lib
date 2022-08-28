@@ -1,17 +1,20 @@
 {
-  "name": "lib-markdown",
+  "name": "lib-markdown-library-test-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple CLI library to extract and test links on markdown format",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cli": "node cli.js ./arquivos/texto1.md"
+    "test": "jest",
+    "cli": "node cli.js"
   },
-  "keywords": [],
+  "keywords": ["markdown", "URL"],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "jest": "^29.0.1"
   }
 }

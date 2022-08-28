@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const chalk = require('chalk');
 const pegaArquivo = require('./index.js');
 const validaURLs = require('./http-validacao.js');
